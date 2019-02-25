@@ -10,6 +10,9 @@ fi
 
 while true;
 do
+	echo "Measuring speed..."
 	speedtest --csv >> speedtest_data.log
+	time_now = "'date +%H:%M:%S'";
+	echo "Speed measured at $time_now"
 	sleep 60
 done
